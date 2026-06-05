@@ -8,7 +8,7 @@
 #include <vector>
 
 template <typename Type> class BST {
-private:
+ private:
   struct TreeNode {
     Type value;
     int count;
@@ -78,7 +78,7 @@ private:
     collectNodes(currentNode->rightChild, result);
   }
 
-public:
+ public:
   BST() : treeRoot(nullptr), totalElements(0) {}
 
   ~BST() { clearTree(treeRoot); }
